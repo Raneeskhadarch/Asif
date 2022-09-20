@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@200;300;400;500;600;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+:root{
+    --color-body: #b6cbce;
+    --color-heading: #eef3db;
+    --color-base: #033f47;
+    --color-base2: #022a30;
+    --color-brand: #e0f780;
+    --color-brand2: #deff58;
+    --sidbar-width: 240px;
+    --font-base: "Bai jamjuree"
+}
+body{
+ background-color: #022a30;
+ color: var(--color-body); 
+   font-family: var(--font-base), sans-serif;
+}
+
+h1,h2,h3,h4,h5,h6 {
+color: #eef3db;
+font-weight: 700;
+}
+
+a{
+    text-decoration: none;
+    color: var(--color-body);
+    transition: all 0.4s ease;
+
+}
+
+a:hover{
+    color: var(--color-brand);
+}
+
+img{
+    width: 100%;
+}
+
+
+.full-height{
+    min-height: 100vh;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 80px;
+    padding-bottom: 80px;
+    margin-left: 80px;
+    border-bottom: 2px solid rgba(225,225,225,0.2);
+
+
+}
+
+.profile-rounded{
+    border-radius: 50%;
+    
+}
+
+.about-profile{
+    padding-bottom: 50px;
+    margin-left: -50px;
+
+
+}
+
+.navabr .nav-link{
+    font-weight: 700;
+    text-transform: uppercase;
+    color: white;
+}
+
+
+/* navbar */
+@media (min-width: 992px) {
+    .navbar{
+        min-height: 100vh;
+        width: var(--sidbar-width);
+        background: linear-gradient(rgb(3, 63, 71, 0.9),rgb(3, 63, 71, 0.8)),url("images/muneeb-syed-x9NfeD3FpsE-unsplash.jpg");
+        background-size: cover;
+        background-position: center;
+    }
+    .navbar-brand img{
+        border: solid 8px rgba(0, 0, 0, 0.414);
+    }
+
+    #home{
+        padding-left: var(--sidbar-width);
+    }
+    .about-brand{
+        padding-left: var(--sidbar-width);
+    }
+    .footer-images{
+        width: 100%;
+        height: 10px;
+    }
+}
+.btn{
+    padding: 12px 28px 12px 28px;
+}
+
+/* footer */
+
+.social-icons{
+  
+}
+.social-icons a{
+  width: 40px;
+  height: 40px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 28px;
+}
+
